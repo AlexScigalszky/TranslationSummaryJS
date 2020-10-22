@@ -1,5 +1,5 @@
 {
-  "name": "translationsummaryjs",
+  "name": "@alexscigalszky/translationsummaryjs",
   "version": "1.0.0",
   "description": "View a summary of missing translation files into a folder",
   "main": "lib/game-engine.js",
