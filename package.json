@@ -1,0 +1,48 @@
+{
+  "name": "translationsummaryjs",
+  "version": "1.0.0",
+  "description": "View a summary of missing translation files into a folder",
+  "main": "lib/game-engine.js",
+  "types": "lib/game-engine.d.ts",
+  "scripts": {
+    "probe": "ts-node ./src/probe.ts",
+    "test": "npx jest --silent --verbose",
+    "build": "npx tsc",
+    "lint": "npx eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexScigalszky/TranslationSummaryJS.git"
+  },
+  "keywords": [
+    "translation",
+    "summary",
+    "js",
+    "library"
+  ],
+  "author": "Alex P. Scigalszky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexScigalszky/TranslationSummaryJS/issues"
+  },
+  "homepage": "https://github.com/AlexScigalszky/TranslationSummaryJS#readme",
+  "dependencies": {
+    "@types/node": "^14.14.2",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.11.0",
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}
