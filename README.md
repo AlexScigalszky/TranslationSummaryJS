@@ -57,9 +57,9 @@ const summary = helper.getSummary();
 
 | Option         | Description                                                                                                                 | Default     |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `folderPath`         | Folder where start to search docs files                                                                               | './docs'    |
-| `filePattern`         | Regular expression as string used to find native files                                                               | '_...md$'   |
-| `filePatternForReplace` | Regular expression with a `param` string witch will be replaced be language key                                    | '_param.md` |
-| `fileExtension`    | File extension for docs files (empty string will take all files)                                                        | '.md'       |
+| `folderPath`         | Folder where start to search docs files                                                                               | `./docs`    |
+| `filePattern`         | Regular expression as string used to find native files                                                               | `_...md$'   |
+| `filePatternForReplace` | Regular expression with a `param` string witch will be replaced be language key                                    | `_param.md` |
+| `fileExtension`    | File extension for docs files (empty string will take all files)                                                        | `.md`       |
 | `extractLanguage`        | Function that return a language from a filename (e: `doc_en.md` must return `en`)                                 |             |
 | `replaceExtension`        | Function that replace a native filename for a especific language filename (e: `doc.md` must return `doc_en.d`)   |             |
