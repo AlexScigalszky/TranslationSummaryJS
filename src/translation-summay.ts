@@ -22,7 +22,7 @@ export class TranslationSummary {
                 ),
             );
             return {
-                [lang]: includes ? 'exists' : 'missing',
+                [lang]: includes ? 'exists' : 'missing translation',
             };
         });
 
