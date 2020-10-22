@@ -1,5 +1,5 @@
 import { Options } from './options';
-import { TranslationSummary } from './translation-summay';
+import { TranslationSummary } from './translation-summary';
 
 const options = new Options();
 
@@ -18,3 +18,11 @@ const helper = new TranslationSummary(options);
 const summary = helper.getSummary();
 
 console.table(summary);
+
+// const ts = require('../src/translation-summary');
+// const files = ['docs/readme.md', `docs/readme_es.md`];
+//         const helper = new ts.TranslationSummary();
+//         const languages = helper.getNativeFiles(files);
+//         const summary = helper.fileSummary(files, files[0], languages);
+//         console.debug('summary', summary);
+//         console.debug('summary', languages);
