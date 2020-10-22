@@ -10,6 +10,18 @@ This library will help you to find missing translation files into a folder `docs
 <p> <img src="./assets/capture.png" alt="capture" /> </p>
 
 
+## How to use
+
+node (JS)
+```javascript
+const ts = require('@translation-summary/core');
+
+const helper = new ts.TranslationSummary();
+const summary = helper.getSummary();
+
+console.table(summary);
+```
+
 ## Show data in console
 
 ```typescript
