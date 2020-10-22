@@ -15,9 +15,12 @@
     "url": "git+https://github.com/AlexScigalszky/TranslationSummaryJS.git"
   },
   "keywords": [
+    "translation-files",
+    "internationalization",
+    "internationalization-tool",
     "translation",
     "summary",
-    "js",
+    "typescript",
     "library"
   ],
   "author": "Alex P. Scigalszky",
