@@ -1,5 +1,3 @@
-import { Options } from './options';
-
 export class Defaults {
     public extractLanguageByDefault(file: string): string {
         return file.substring(file.length - 5, file.length - 3);

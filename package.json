@@ -1,21 +1,27 @@
 {
   "name": "@translation-summary/core",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "View a summary of missing translation files into a folder",
   "main": "lib/translation-summay.js",
   "types": "lib/translation-summay.d.ts",
   "scripts": {
     "probe": "ts-node ./src/probe.ts",
     "test": "npx jest --silent --verbose",
+    "test:coverage": "jest --silent --verbose --coverage",
     "build": "npx tsc",
-    "lint": "npx eslint -c tsconfig.json '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "npx eslint --quiet --fix",
+    "prepare": "npm run build",
+    "prepublish": "npm test && npm run lint",
+    "publish:patch": "tsc && npm version patch && npm publish --access public",
+    "publish:pack": "tsc && npm pack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexScigalszky/TranslationSummaryJS.git"
   },
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "bin/**/*"
   ],
   "keywords": [
     "translation-files",
@@ -26,6 +32,14 @@
     "typescript",
     "library"
   ],
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=10.17"
+  },
+  "bin": {
+    "translation-summary": "bin/cli.js",
+    "ts": "bin/cli.js"
+  },
   "author": "Alex P. Scigalszky",
   "license": "ISC",
   "bugs": {
@@ -37,12 +51,17 @@
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "eslint": "^7.11.0",
-    "ts-node": "^9.0.0"
+    "eslint-config-prettier": "^6.14.0",
+    "ts-node": "^9.0.0",
+    "update-notifier": "^5.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
     "i": "^0.3.6",
     "jest": "^26.6.0",
+    "lint-staged": "^10.4.2",
     "prettier": "^2.1.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
