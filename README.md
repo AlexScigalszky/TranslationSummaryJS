@@ -13,7 +13,9 @@ This library will help you to find missing translation files into a folder `docs
 ## How to use
 
 Install
-`npm i @translation-summary/core -g`
+```bash
+npm i @translation-summary/core -g
+```
 
 Create `translation-summary-config.js` file.
 You can config just the properties witch you need. 
@@ -35,9 +37,13 @@ module.exports = {
 **Note:** visit Avaliables options for more information
 
 Run ts command
-`translation-summary --config translation-summary-config.js`
+```bash
+translation-summary --config translation-summary-config.js
+```
 or just
-`ts -c translation-summary-config.js`
+```bash
+ts -c translation-summary-config.js
+```
 
 ## Install implemento into your proyect
 
@@ -107,3 +113,20 @@ const summary = helper.getSummary();
 
 
 ## Troubleshooting
+
+Some libraries may you need to install globably
+
+ts-node
+```bash
+npm i ts-node -g
+```
+
+tsutils
+```bash
+npm i tsutils -g
+```
+
+typescript
+```bash
+npm i typescript -g
+```
