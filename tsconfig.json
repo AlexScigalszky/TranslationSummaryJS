@@ -6,6 +6,6 @@
         "outDir": "./lib",
         "strict": true
     },
-    "include": ["src"],
+    "include": ["src", "bin/options.js"],
     "exclude": ["node_modules", "**/tests/*"]
 }

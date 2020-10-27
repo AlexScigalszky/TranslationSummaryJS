@@ -12,6 +12,35 @@ This library will help you to find missing translation files into a folder `docs
 
 ## How to use
 
+Install
+`npm i @translation-summary/core -g`
+
+Create `translation-summary-config.js` file.
+You can config just the properties witch you need. 
+
+```javascript 
+module.exports = {
+    folderPath: './i18n',
+    filePattern: '_...md$',
+    filePatternForReplace: '_LANGUAGE.md',
+    fileExtension: '.md',
+    extractLanguage: (file) => {
+        return file.substring(file.length - 5, file.length - 3);
+    },
+    replaceExtension: (file, lang, pattern, fileExtension) => {
+        return file.replace(fileExtension, pattern.replace('LANGUAGE', lang));
+    },
+};
+```
+**Note:** visit Avaliables options for more information
+
+Run ts command
+`translation-summary --config translation-summary-config.js`
+or just
+`ts -c translation-summary-config.js`
+
+## Install implemento into your proyect
+
 node (JS)
 ```javascript
 const ts = require('@translation-summary/core');

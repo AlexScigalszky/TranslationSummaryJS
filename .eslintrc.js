@@ -20,7 +20,7 @@ module.exports = {
     quotes: [
       "error",
       "single",
-      { avoidEscape: true, allowTemplateLiterals: false }
+      { avoidEscape: true, allowTemplateLiterals: false, }
     ],
     "prettier/prettier": ["error", { singleQuote: true }]
   }
