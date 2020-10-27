@@ -104,3 +104,6 @@ const summary = helper.getSummary();
 | `fileExtension`    | File extension for docs files (empty string will take all files)                                                        | `.md`       |
 | `extractLanguage`        | Function that return a language from a filename (e: `doc_en.md` must return `en`)                                 |             |
 | `replaceExtension`        | Function that replace a native filename for a especific language filename (e: `doc.md` must return `doc_en.d`)   |             |
+
+
+## Troubleshooting
