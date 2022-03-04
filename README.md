@@ -45,7 +45,7 @@ or just
 ts -c translation-summary-config.js
 ```
 
-## Install implemento into your proyect
+## Install plugin into your proyect
 
 node (JS)
 ```javascript
