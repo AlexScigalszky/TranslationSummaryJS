@@ -7,5 +7,5 @@
         "strict": true
     },
     "include": ["src", "bin/options.js"],
-    "exclude": ["node_modules", "**/tests/*"]
+    "exclude": ["node_modules", "**/tests/*", "doc", "documentation"]
 }
