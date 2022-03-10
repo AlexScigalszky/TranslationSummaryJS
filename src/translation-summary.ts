@@ -36,7 +36,7 @@ export class TranslationSummary {
 
     public getSummary(): FileSummary[] {
         const fileHelper = new FileHelper(this.options);
-        var files = fileHelper.getFileNames(this.options.folderPath);
+        const files = fileHelper.getFileNames(this.options.folderPath);
         const languages = this.searchLanguages(files);
         const nativeFiles = this.getNativeFiles(files);
         const result = nativeFiles.map((file: string) => this.fileSummary(files, file, languages));
