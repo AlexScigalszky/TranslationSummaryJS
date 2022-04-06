@@ -1,6 +1,6 @@
 {
   "name": "@translation-summary/core",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "View a summary of missing translation files into a folder",
   "main": "lib/translation-summay.js",
   "types": "lib/translation-summay.d.ts",
