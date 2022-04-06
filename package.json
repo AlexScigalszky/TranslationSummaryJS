@@ -77,5 +77,19 @@
     "*.{js,ts}": [
       "eslint  '*/**/*.{js,ts,tsx}' --fix"
     ]
-  }
+  },
+  "funding": [
+    {
+      "type" : "cafecito (I only could create one for all my projects)",
+      "url" : "https://cafecito.app/palabrasaleatorias"
+    },
+    {
+      "type" : "by me a coffee (I only could create one for all my projects)",
+      "url" : "https://www.buymeacoffee.com/palabras"
+    },
+    {
+      "type" : "support me on Ko-fi (I only could create one for all my projects)",
+      "url" : "https://ko-fi.com/palabrasaleatorias"
+    }
+  ]
 }
